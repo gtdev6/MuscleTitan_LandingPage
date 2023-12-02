@@ -334,11 +334,16 @@ footer h2{
 
 
 
+@media (orientation: portrait) {
+    body{
+        height: 100vh;
+        width: 100vw;
+        margin: 0 auto;
+    } 
+}
 
 
-
-@media (min-width: 1440px ) and (orientation:horizontal) {
-
+@media only screen and (min-width: 1441px) and (orientation: landscape)  {
     body{
         /* background-color: #2C5364; */
         /* display: flex; */
@@ -354,14 +359,9 @@ footer h2{
 
 }
 
-@media (orientation: vertical) {
-    body{
-        height: 100vh;
-        width: 100vw;
-        margin: 0 auto;
-        background-color: red;
-    } 
-}
+
+
+  
 
 
 
