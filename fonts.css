@@ -1,17 +1,17 @@
 @font-face {
     font-family: 'Zing_Rust_Custom';
-    src: url('fonts/ZingRustG3-Base.otf');
+    src: url('Fonts/ZingRustG3-Base.otf');
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Zing_Rust_G1';
-    src: url('fonts/ZingRustG1-Base.otf');
+    src: url('Fonts/ZingRustG1-Base.otf');
 }
 
 @font-face {
     font-family: 'Zing_Rust_BASE';
-    src: url('fonts/ZingRust-Base.otf');
+    src: url('Fonts/ZingRust-Base.otf');
 }
 
 @font-face{
