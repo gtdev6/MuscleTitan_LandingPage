@@ -1,0 +1,367 @@
+@charset "utf-8";
+@import url("fonts.css");
+@import url(constants.css);
+
+/* @font-face {
+    font-family: 'Zing_Rust_Custom';
+      src: url('fonts/ZingRustG3-Base.otf'); /* IE9 Compat Modes */
+/* } */ */
+
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0%;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+header{
+    height: 80px;
+    background: linear-gradient(to top left,#0f2027,#2C5364);
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+#brand-container{
+    display: flex;
+    border: white;
+    border-radius: 10px;
+    height: 100%;
+    width: 200px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+#logo-container{
+    /* border: solid 2px red; */
+    /* height: inherit; */
+    width: 20%;
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    padding: 5px;
+
+}
+
+
+#img-gym {
+    height: 100%;
+    width: 30%;
+    object-fit: scale-down;
+    aspect-ratio: 1.297;
+} 
+
+#logo-title{
+    /* margin-left:0px; */
+    font-family: "Zing_Rust_Custom";
+    /* font-family: "Zing_Rust_G1"; */
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 10px;
+}
+
+#logo-title span{
+    font-size: 2rem;
+}
+
+
+#nav_menu{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: flex-end;
+}
+
+.nav-item-link{
+    /* font-family: "Zing_Rust_G1"; */
+    font-family: "Zing_Rust_Custom";
+    margin-right: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: hand;
+}
+
+.nav-item-link:hover{
+    cursor: pointer;
+    color: red;
+    text-decoration: underline;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* -----------Hero SECTION */
+#hero-section{
+    border: solid 2px lightblue;
+    background-color: var(--cloud-wisp);
+    /* background-color: transparent; */
+    height: 750px;
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+
+.background-image{
+    position: absolute;
+    z-index: 4;
+    height: 100%;
+    width: 100%;
+    background-image: url(Images/backgroundImage.svg);
+    opacity: 10%;
+}
+
+/* #background-image img{
+    opacity: 10%;
+} */
+
+/* #hero-section div{
+    height: inherit;
+} */
+
+#catch-line {
+    font-family: "Zing_Rust_Custom";
+    /* font-family: "Zing_Rust_BASE"; */
+    font-weight: 400;
+    background: linear-gradient(to bottom left,#0f2027,#2C5364);
+    /* color: var(--primary-color2); */
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 14%;
+    font-size: 6em;
+    line-height: 90%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+.commas{
+    position: absolute;
+}
+
+
+ #catch-line::before{
+    content: url(images/invertedCommasLeft.svg);
+    width: 8%;
+    height: 8%;
+    position: absolute;
+    top: -80px;
+    left: -40px;
+} 
+#bottomLine{
+    margin-left: 10%;
+}
+
+#catch-line::after{
+    content: url(images/invertedCommasRight.svg);
+    width: 8%;
+    height: 8%;
+    position: absolute;
+    top: 30%;
+    right: 25%;
+}
+
+
+#catcherImage{
+    width: 70%;
+    margin-right: 2%;
+    align-self: flex-end;
+    z-index: 4;
+}
+
+
+#page-link-section{
+    /* background-color: white; */
+    /* background-color: var(--cloud-wisp); */
+    border-left: solid 2px lightblue;
+    border-right: solid 2px lightblue;
+    height: 750px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#site-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    cursor: pointer;
+    /* margin-left: 100px; */
+}
+
+
+
+.post-container{
+    background-color: var(--primary-color);
+    z-index: 10;
+    height: 500px;
+    width: 300px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.post-text{
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding: 15px;
+    color: white;
+    align-self: flex-end;
+    height: 170px;
+    overflow: hidden;
+}
+
+.post-text h2{
+    margin-top: -5px;
+    height: 15px;
+    font-family: "BronRust";
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.post-container:hover, .post-text:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+    align-self: center;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 520px;
+    padding-bottom: 0px;
+}
+
+.post-container:hover img{
+    height: 100%;
+}
+
+.post-container:hover h2{
+    color: red;
+}
+
+
+.post-container img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: left;
+    position: absolute;
+    z-index: -10;
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  ------------------------FOOTER ------------------------ */
+footer{
+    height: 200px;
+    background: linear-gradient(to bottom left,#0f2027,#2C5364);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 2%;
+}
+
+#social-link-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer h2{
+    color: white;
+    font-family: "Zing_Rust_Regular";
+    font-weight: 400;
+    height: 15px;
+}
+
+#social-links{
+    display: flex;
+    flex-direction: row;
+}
+
+#social-links img{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+
+#copyright{
+    align-self: flex-end;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.small_letters_footer{
+    font-size: 14px;
+    padding-top: 2px;
+}
+
+
+
+
+
+
+@media (min-width: 1440px ) and (orientation:horizontal) {
+
+    body{
+        /* background-color: #2C5364; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* align-self: center; */
+        height: 100vh;
+        width: 1440px;
+        margin: 0 auto;
+
+    } 
+
+}
+
+@media (orientation: vertical) {
+    body{
+        height: 100vh;
+        width: 100vw;
+        margin: 0 auto;
+        background-color: red;
+    } 
+}
+
+
+
