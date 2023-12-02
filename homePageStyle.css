@@ -156,7 +156,7 @@ main{
 
 
  #catch-line::before{
-    content: url(images/invertedCommasLeft.svg);
+    content: url(Images/invertedCommasLeft.svg);
     width: 8%;
     height: 8%;
     position: absolute;
@@ -168,7 +168,7 @@ main{
 }
 
 #catch-line::after{
-    content: url(images/invertedCommasRight.svg);
+    content: url(Images/invertedCommasRight.svg);
     width: 8%;
     height: 8%;
     position: absolute;
@@ -241,6 +241,17 @@ main{
     font-weight: 100;
 }
 
+.post-text p{
+    font-family: "Zing_Rust_Regular";
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.post-text:hover p{
+    font-size: 18px;
+
+}
+
 .post-container:hover, .post-text:hover{
     background-color: rgba(0, 0, 0, 0.7);
     align-self: center;
@@ -258,6 +269,7 @@ main{
 }
 
 .post-container:hover h2{
+    font-size: 26px;
     color: red;
 }
 
@@ -325,11 +337,14 @@ footer h2{
     display: flex;
     justify-content: center;
     margin-bottom: 5px;
+    font-family: "Zing_Rust_Regular";
+    font-weight: 400;
 }
 
 .small_letters_footer{
-    font-size: 14px;
-    padding-top: 2px;
+    font-size: 12px;
+    padding-top: 3.5px;
+    font-family: "Zing_Rust_Regular";
 }
 
 
