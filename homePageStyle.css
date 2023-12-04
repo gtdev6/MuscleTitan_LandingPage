@@ -46,16 +46,16 @@ header{
     width: 20%;
     display: flex;
     align-content: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     padding: 5px;
-
+    margin-left: 20px;
 }
 
 
 #img-gym {
     height: 100%;
-    width: 30%;
-    object-fit: scale-down;
+    width: auto;
+    object-fit: contain;
     aspect-ratio: 1.297;
 } 
 
@@ -108,11 +108,9 @@ main{
 #hero-section{
     border: solid 2px lightblue;
     background-color: var(--cloud-wisp);
-    /* background-color: transparent; */
     height: 750px;
     position: relative;
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-between;
 }
 
@@ -125,17 +123,9 @@ main{
     opacity: 10%;
 }
 
-/* #background-image img{
-    opacity: 10%;
-} */
-
-/* #hero-section div{
-    height: inherit;
-} */
 
 #catch-line {
     font-family: "Zing_Rust_Custom";
-    /* font-family: "Zing_Rust_BASE"; */
     font-weight: 400;
     background: linear-gradient(to bottom left,#0f2027,#2C5364);
     /* color: var(--primary-color2); */
@@ -185,9 +175,12 @@ main{
 }
 
 
+
+
+/* ---------------------------------------Page link Section */
+
+
 #page-link-section{
-    /* background-color: white; */
-    /* background-color: var(--cloud-wisp); */
     border-left: solid 2px lightblue;
     border-right: solid 2px lightblue;
     height: 750px;
@@ -203,7 +196,6 @@ main{
     justify-content: space-around;
     width: 80%;
     cursor: pointer;
-    /* margin-left: 100px; */
 }
 
 
@@ -225,7 +217,6 @@ main{
 }
 
 .post-text{
-    /* background-color: rgba(0, 0, 0, 0.5); */
     padding: 15px;
     color: white;
     align-self: flex-end;
@@ -285,12 +276,15 @@ main{
 }
 
 
+.postTextHover{
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    width: 100%;
+    height: 520px !important;
+    padding-left: 10% ;
+    padding-right: 10%;
+    padding-top: 15px;
 
-
-
-
-
-
+}
 
 
 
@@ -355,28 +349,306 @@ footer h2{
         width: 100vw;
         margin: 0 auto;
     } 
+
+    /* -----------Hero SECTION */
+    #hero-section{
+        height: fit-content;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* margin-bottom: 100px; */
+    }
+
+    #catch-line{
+        margin-left: 0;
+    }
+
+    #catcherImage{
+        align-self: center;
+    }
+
+    #catch-line::after {
+        top: 63%;
+        right: 10%;
+    }
+
+
 }
 
 
-@media only screen and (min-width: 1441px) and (orientation: landscape)  {
+@media only screen and (min-width: 1440px)  {
     body{
-        /* background-color: #2C5364; */
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* justify-content: center; */
-        /* align-items: center; */
-        /* align-self: center; */
         height: 100vh;
         width: 1440px;
         margin: 0 auto;
-
     } 
+
+    .post-text-large-screen{
+        background-color: rgba(0, 0, 0, 0.7) !important;
+        width: 100%;
+        height: 520px !important;
+        padding-left: 10% ;
+        padding-right: 10%;
+        padding-top: 15px;
+    }
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
+    body{
+        height: 100vh;
+        width: 100vw;
+        margin: 0 auto;
+    } 
+
+    #page-link-section{
+        height: fit-content;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 0;
+    }
+
+    .post-container{
+        background-color: var(--primary-color);
+        z-index: 10;
+        height: 300px;
+        width: 90%;
+        max-width: 600px;
+        border-radius: 30px;
+
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+        margin-bottom: 50px;
+
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+
+
+
+    #site-links{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+        /* border: 4px solid pink; */
+    }
+
+    .post-text{
+        padding: 15px;
+        padding-top: 30px ;
+        color: white;
+        justify-self: end;
+        height: 100%;
+        width: 44%;
+        overflow: hidden;
+        border: 4px solid green;
+    }
+
+    .post-text:hover {
+        width: 80%;
+        padding-left: 10% ;
+        padding-right: 10%;
+        font-size: 18px;
+    }
+
+
+
+    .post-text-medium-screen{
+        background-color: rgba(0, 0, 0, 0.7) !important;
+        width: 80%;
+        height: 300px !important;
+        padding-left: 10% ;
+        padding-right: 10%;
+        padding-top: 15px;
+    }
+
+
+
+    
+    .post-container:hover .post-text:hover{
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0px;
+        width: 80%;
+        height: 300px;
+    }
+
+
+    .post-container:hover{
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0px;
+        height: 300px;
+    }
+
+        
+    .post-container:hover img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+
+    .post-container:hover img:hover, .post-text:hover {
+        width: 100%;
+        padding-left: 10% ;
+        padding-right: 10%;
+    }
+    
+    .post-container:hover h2{
+        font-size: 26px;
+        color: red;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 639px) and  (orientation: portrait) {
+    body{
+        height: 100vh;
+        width: 100vw;
+        margin: 0 auto;
+    } 
+
+
+    #catch-line{
+        font-size: 4em;
+        width: 80%;
+    }
+
+    #catch-line::before {
+        top: -40px;
+        left: -30px;
+      }
+
+    #catch-line::after {
+        top: 23%;
+        right: -4%;
+      }
+
+      #img-gym {
+        height: 100%;
+        width: auto;
+        object-fit: contain;
+        aspect-ratio: 1.297;
+      }
+
+    #logo-container {
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: flex-start;
+        padding: 5px;
+    }
+
+      #nav_menu{
+        visibility: hidden;
+      }
+
+
+
+    #site-links{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+        /* border: 4px solid pink; */
+    }
+
+    #page-link-section{
+        height: fit-content;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 0;
+    }
+
+    
+    .post-container{
+        background-color: var(--primary-color);
+        z-index: 10;
+        height: 540px;
+        width: 90%;
+        max-width: 600px;
+        border-radius: 30px;
+
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: flex-end;
+        padding-bottom: 0;
+        margin-bottom: 50px;
+
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+    .post-text{
+        padding: 15px;
+        padding-top: 30px ;
+        color: white;
+        /* justify-self: center; */
+        align-self: center;
+        height: 35%;
+        width: 80%;
+        overflow: hidden;
+        border: 4px solid green;
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+    .post-container img:hover{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .post-text:hover {
+        width: 80%;
+        padding-left: 10% ;
+        padding-right: 10%;
+        font-size: 18px;
+    }
+
+    .post-container img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+    }
+
 
 }
 
 
 
   
-
-
 
