@@ -2,13 +2,10 @@
 @import url("fonts.css");
 @import url("constants.css");
 
-/* @font-face {
-    font-family: 'Zing_Rust_Custom';
-      src: url('fonts/ZingRustG3-Base.otf'); /* IE9 Compat Modes */
-/* } */ */
 
 *,::before,::after{
     box-sizing: border-box;
+    margin: 0;
 }
 
 body{
@@ -43,8 +40,8 @@ header{
 #logo-container{
     width: 20%;
     display: flex;
-    align-content: center;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     padding: 5px;
     margin-left: 20px;
 }
@@ -58,12 +55,11 @@ header{
 } 
 
 #logo-title{
-    /* margin-left:0px; */
     font-family: "Zing_Rust_Custom";
-    /* font-family: "Zing_Rust_G1"; */
     font-weight: 400;
     font-size: 3rem;
     line-height: 10px;
+    text-align: center;
 }
 
 #logo-title span{
@@ -89,7 +85,18 @@ header{
     cursor: hand;
 }
 
-.nav-item-link:hover{
+#nav_menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.active{
+    color: red  !important; 
+    text-decoration: underline  !important;
+}
+
+
+#nav_menu a:hover, .nav-item-link:hover{
     cursor: pointer;
     color: red;
     text-decoration: underline;
@@ -102,7 +109,7 @@ main{
 
 
 
-/* -----------Hero SECTION */
+/* ---------------------------------Hero SECTION -------------------------------*/
 #hero-section{
     border: solid 2px lightblue;
     background-color: var(--cloud-wisp);
@@ -223,7 +230,7 @@ main{
 }
 
 .post-text h2{
-    margin-top: -5px;
+    /* margin-top: -5px; */
     height: 15px;
     font-family: "BronRust";
     font-size: 24px;
@@ -232,6 +239,7 @@ main{
 
 .post-text p{
     font-family: "Zing_Rust_Regular";
+    margin-top: 20px;
     font-size: 14px;
     line-height: 1.4;
 }
@@ -308,34 +316,52 @@ footer h2{
     font-family: "Zing_Rust_Regular";
     font-weight: 400;
     height: 15px;
+    margin-top: 20px;
 }
 
 #social-links{
+    margin-top: 10%;
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 #social-links img{
     width: 32px;
     height: 32px;
     cursor: pointer;
+    margin-right: 10px;
+}
+
+#social-links img:hover{
+    transform: rotateZ(-1turn);
+    -webkit-transform: rotateZ(-1turn);
+    -moz-transform: rotateZ(-1turn);
+    -ms-transform: rotateZ(-1turn);
+    -o-transform: rotateZ(-1turn);
+    transition: transform 0.5s ;
+    -webkit-transition: transform 0.5s ;
+    -moz-transition: transform 0.5s ;
+    -ms-transition: transform 0.5s ;
+    -o-transition: transform 0.5s ;
 }
 
 
 #copyright{
     align-self: flex-end;
     width: 100%;
-    color: white;
+    color: rgba(255, 255, 255, 0.3);
     display: flex;
     justify-content: center;
     margin-bottom: 5px;
     font-family: "Zing_Rust_Regular";
     font-weight: 400;
+    font-size: 12px;
 }
 
 .small_letters_footer{
     font-size: 12px;
-    padding-top: 3.5px;
+    padding-top: 0px;
     font-family: "Zing_Rust_Regular";
 }
 

@@ -1,0 +1,152 @@
+
+body{
+    height: auto;
+}
+
+main{
+    /* height: calc(min(1200px, 1200px)); */
+    min-height: 900px;
+    height: auto;
+    border-left: rgba(15, 33, 41,0.5) 2px solid;
+    border-right: rgba(15, 33, 41,0.5) 2px solid;
+}
+
+.background-image{
+    z-index: -1;
+}
+
+#contact-section{
+    position: relative;
+    overflow: hidden;
+    /* height: 1200px; */
+    min-height: 900px;
+    height: fit-content;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#contactSection-header{
+    margin: 2% 2%;
+    margin-top: 4%;
+    width: 80%;
+    /* margin-bottom: 2%; */
+}
+
+#contactSection-header h2{
+    font-family: "Zing_Rust_Custom";
+    font-weight: 400;
+    font-size: 2rem;
+    text-decoration: underline;
+    background: linear-gradient(to top left,#0f2027,#2C5364);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#contact-form-container{
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    border: #2C5364 2px solid;
+    align-self: center;
+    margin-top: 8%;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+
+
+}
+
+#contactForm{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #0f2027;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 4%;
+    -webkit-border-radius: 4%;
+    -moz-border-radius: 4%;
+    -ms-border-radius: 4%;
+    -o-border-radius: 4%;
+}
+
+
+#contactForm label{
+    color: orange;
+    font-weight: 400;
+    font-family: "Zing_Rust_Regular";
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#contactForm input{
+    height: 35px;
+    width: 250px;
+    margin-bottom: 2cqmin;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    font-weight: 400;
+    font-family: "Zing_Rust_Regular";
+    font-size: 16px;
+}
+
+#contactForm textarea{
+    width: 100%;
+    height: 50%;
+
+    font-weight: 400;
+    font-family: "Zing_Rust_Regular";
+    font-size: 16px;
+
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#contactForm button{
+    width: 100px;
+    height: 40px;
+    font-family: "VersatileRust";
+    font-size: 18px;
+    color: orange;
+    background: linear-gradient(to top left,#0f2027,#2C5364);
+    cursor: pointer;
+    border-color: transparent;
+
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#contactForm button:hover{
+    width: 100px;
+    height: 40px;
+    color: orange;
+    background: linear-gradient(to bottom left,#0f2027,#2C5364);
+    cursor: pointer;
+    border-color: transparent;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+
+

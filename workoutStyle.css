@@ -1,0 +1,268 @@
+
+main{
+    height: calc(min(1200px, 1200px));
+    border-left: rgba(15, 33, 41,0.5) 2px solid;
+    border-right: rgba(15, 33, 41,0.5) 2px solid;
+}
+
+.background-image{
+    z-index: -1;
+}
+
+#workouts-section {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+#workout-header{
+    margin: 5% 2%;
+    margin-bottom: 2%;
+}
+
+#workout-header h1{
+    font-family: "Zing_Rust_Custom";
+    font-weight: 400;
+    font-size: 2.5rem;
+    background: linear-gradient(to top left,#0f2027,#2C5364);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#workout-container{
+    /* border: #0f2027 2px solid; */
+    margin: 5% 2%;
+    margin-top: 2%;
+    height: auto;
+    min-height: 750px;
+    padding: 4%;
+    padding-left: 5% ;
+
+    display: grid;
+    grid-template-columns:repeat(3, 300px);
+    grid-template-rows: repeat(2, 400px);
+    grid-gap: 5%;
+    align-items: center;
+    justify-content: start;
+    
+
+    overflow: hidden;
+    /* padding-left: 10%; */
+}
+
+.workout-item{
+    background: linear-gradient(to bottom left,#0f2027,#2C5364);
+    height: 100%;
+    width: 300px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    overflow: hidden;
+}
+
+.workout-item:hover{
+    cursor: pointer;
+}
+
+.overlay-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+    border: 4px solid rgb(255, 165, 47);
+    background-color: rgba(0, 0, 0, 0.8) ;
+    visibility: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay-container img{
+    position: absolute;
+    opacity: 0.80;
+    mix-blend-mode: darken;
+    /* width: 100%; */
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 0.8;
+    object-fit: cover;
+    z-index: -10;
+    
+}
+
+#close-overlay{
+    height: 50px;
+    z-index: 10;
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+#close-icon{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+#close-icon img{
+    z-index: 25;
+}
+
+#close-icon:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid rgb(255, 165, 47);
+
+
+
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all .100s ;
+    -webkit-transition: all .100s ;
+    -moz-transition: all .100s ;
+    -ms-transition: all .100s ;
+    -o-transition: all .100s ;
+}
+
+#close-icon:hover img{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+#close-overlay img{
+    height: 50px;
+    width: 50px;
+}
+
+
+.workout-item img{
+    width: 100%;
+    height: 50%;
+    aspect-ratio: 0.8;
+    object-fit: cover;
+    object-fit: top;
+}
+
+.workout-item:hover .text-workout-container{
+    border: 4px solid rgb(255, 165, 47);
+    background-color: rgba(0, 0, 0, 0.7) ;
+    height: 100%;
+    z-index: 100;
+    border-radius: 20px;
+    transition: background-color .150s ease-in-out;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transition: background-color .150s ease-in-out;
+    -moz-transition: background-color .150s ease-in-out;
+    -ms-transition: background-color .150s ease-in-out;
+    -o-transition: background-color .150s ease-in-out;
+}
+
+.workout-item:hover .text-workout-container>h2{
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+#workout-plan{
+    padding: 20%;
+    text-align: start;
+    padding-top: 5%;
+    /* overflow: scroll; */
+    overflow-y: scroll;
+    scrollbar-color: rgb(255, 165, 47, 0.7);
+    scrollbar-width: thin;
+}
+
+#workout-plan h1{
+    color: red;
+    font-family: "VersatileRust";
+    font-weight: 400;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#workout-plan li{
+    color: rgb(255, 165, 47);
+    font-family: "Zing_Rust_Regular";
+    font-weight: 300;
+    font-size: 24px; 
+    line-height: 1.4;
+}
+
+
+.workout-item:hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.workout-item:hover img{
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+.text-workout-container{
+    padding: 4%;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.text-workout-container:hover{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+
+
+.text-workout-container h2 {
+    color: rgb(255, 165, 47);
+    font-family: "VersatileRust";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.1;
+    margin-bottom: 4px;
+    /* text-decoration: underline; */
+}
+
+.text-workout-container h2:hover{
+    color: rgb(250, 142, 0);
+    cursor: pointer;
+    text-decoration: underline;
+} 
+
+.text-workout-container p {
+    color: white;
+    font-family: "Zing_Rust_Regular";
+    font-weight: 300;
+    font-size: 14px; 
+    line-height: 1.4;
+    overflow: hidden;
+}
+
+
+
+/* .text-workout-container{
+    padding: 3%;
+    padding-top: 0px;
+} */

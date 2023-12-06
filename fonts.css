@@ -28,3 +28,9 @@
     font-family: "BronRust";
     src: url("./Fonts/BronnRust-BoldFillG.otf");
 }
+
+@font-face {
+    font-family: "VersatileRust";
+    src: url("./Fonts/VersatileRust-Bold.ttf");
+}
+

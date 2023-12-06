@@ -1,0 +1,114 @@
+main{
+    /* height: calc(min(1200px, 1200px)); */
+    height: auto;
+    border-left: rgba(15, 33, 41,0.5) 2px solid;
+    border-right: rgba(15, 33, 41,0.5) 2px solid;
+}
+
+.background-image{
+    z-index: -1;
+}
+
+#dietPlan-Section {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+#dietPlans-header{
+    margin: 5% 2%;
+    margin-bottom: 2%;
+}
+
+#dietPlans-header h1{
+    font-family: "Zing_Rust_Custom";
+    font-weight: 400;
+    font-size: 2.5rem;
+    background: linear-gradient(to top left,#0f2027,#2C5364);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#dietPlansItems-Container{
+    height: 85%;
+    width: inherit;
+    padding: 2% 5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    overflow-y: scroll;
+    scrollbar-color: rgb(255, 252, 252, 0.7);
+    scrollbar-width: thin;
+}
+
+.dietPlanItem{
+    width: 90%;
+    height: 300px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: #0f2027 2px solid;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background: linear-gradient(to top left,#0f2027,#2C5364);
+    margin-bottom: 50px;
+}
+
+.dietPlanItem img{
+    width: 40%;
+    height: 100%;
+    aspect-ratio: 1.4;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.dietPlan-textContainer{
+    width: 70%;
+    height: 300px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.dietPlan-textContainer h1{
+    color: rgb(255, 165, 47);
+    font-family: "VersatileRust";
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.4;
+    /* margin-top: 10px; */
+}
+
+.dietPlan-textContainer ul{
+    margin-left: 0px;
+    padding-left: 30px;
+}
+
+.dietPlan-textContainer li{
+    color: white;
+    font-family: "Zing_Rust_Regular";
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+.dietPlan-textContainer li:hover{
+    color: rgb(255, 165, 47);
+    font-size: 18px;
+
+}
+
+

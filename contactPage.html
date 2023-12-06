@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Muscle Titan - Contact</title>
+		<link rel="stylesheet" href="homePageStyle.css" />
+		<link rel="stylesheet" href="contact.css" />
+		<!-- <link rel="stylesheet" href="workoutStyle.css"> -->
+		<link rel="icon" type="image/png" sizes="32x32" href="Images/favicon.png" />
+	</head>
+	<body>
+		<header>
+			<div id="logo-container">
+				<img id="img-gym" src="Images/logo.png" alt="Logo" />
+				<h1 id="logo-title">M<span>USCLE</span>T<span>ITAN</span></h1>
+			</div>
+
+			<div id="nav_menu">
+				<a class="nav-item-link" href="homePage.html" target="_self">HOME</a>
+				<a class="nav-item-link" href="workoutPage.html" target="_self">WORKOUTS</a>
+				<a class="nav-item-link" href="dietPlansPage.html" target="_self">NUTRITIONS</a>
+				<a class="nav-item-link" href="articlesPage.html" target="_self">ARTICLES</a>
+				<a class="nav-item-link active" href="contactPage.html" target="_self">CONTACT</a>
+			</div>
+		</header>
+		<main>
+			<section id="contact-section">
+				<div class="background-image"></div>
+				<div id="contactSection-header">
+					<h2>Contact Us : We're just one email apart</h2>
+				</div>
+				<div id="contact-form-container">
+					<form id="contactForm">
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name" required />
+
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required />
+
+						<label for="message">Message:</label>
+						<textarea id="message" name="message" rows="4" required></textarea>
+
+						<button type="submit">Send</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div id="social-link-container">
+				<h2>Follow Us</h2>
+				<div id="social-links">
+					<a href="https://www.facebook.com/"
+						><img class="socialLink" src="Images/facebook.svg"
+					/></a>
+					<a href="https://www.instagram.com/ghulam__tahir" target="_self">
+						<img class="socialLink" src="Images/instagram.svg" />
+					</a>
+					<a href="https://twitter.com/"
+						><img class="socialLink" src="Images/twitter.svg"
+					/></a>
+				</div>
+			</div>
+			<div id="copyright">
+				COPYRIGHT © 2023-2025 M<span class="small_letters_footer">USCLE</span>T<span
+					class="small_letters_footer"
+					>ITAN</span
+				>
+			</div>
+		</footer>
+
+		<script src="articlesPage.js"></script>
+	</body>
+</html>
